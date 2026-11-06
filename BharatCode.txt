@@ -1,0 +1,24 @@
+BharatCode Build League 2026
+
+Project Name: System Architecture Studio
+
+Category: Coding & Developer Tools
+
+Project Description:
+System Architecture Studio is an AI-powered visual system design platform that helps developers create, analyze, test, and improve software architectures.
+
+Key Features:
+- Interactive drag-and-drop architecture canvas
+- AI-assisted architecture generation
+- Architecture explanation and flow visualization
+- Security review and vulnerability analysis
+- Logic testing and event-flow simulation
+- Automated architecture issue resolution
+
+Tech Stack:
+Next.js, React, TypeScript, NestJS, GraphQL, Socket.IO, React Flow
+
+GitHub Repository:
+https://github.com/nishant-giri-j/System-Architecture-studio
+
+Hackathon: BharatCode Build League 2026
