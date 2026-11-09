@@ -17,3 +17,4 @@ pnpm dev
 - `apps/web` — Next.js, Tailwind, and React Flow canvas; deploy to Vercel.
 - `apps/api` — NestJS API with GraphQL and Socket.IO gateway; deploy to Render.
 - `packages/shared` — diagram contracts shared by both applications.
+# System-Architecture-Studio-Gnani
