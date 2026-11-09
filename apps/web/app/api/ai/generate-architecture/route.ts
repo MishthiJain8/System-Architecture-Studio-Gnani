@@ -171,7 +171,7 @@ export async function POST(request: Request) {
             schema: AiArchitectureOutputSchema as any,
             system: systemPrompt,
             prompt: `Design the following architecture:\n\n${prompt.trim()}`,
-            temperature: 0.7,
+
             maxRetries: 0,
         });
 

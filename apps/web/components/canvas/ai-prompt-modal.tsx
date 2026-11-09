@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react';
 import { Sparkles, X, Loader2, Zap, Send, AlertCircle } from 'lucide-react';
 
+import { GnaniVoiceRecorder } from "./gnani-voice-recorder";
+
 interface AiPromptModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -99,7 +101,17 @@ export function AiPromptModal({
             </div>
           </div>
 
-          {/* Example Chips */}
+          
+      <GnaniVoiceRecorder
+        disabled={isGenerating}
+        onTranscript={(text) =>
+          setPrompt((current) =>
+            current.trim() ? `${current.trim()} ${text}` : text
+          )
+        }
+      />
+
+      {/* Example Chips */}
           {!isGenerating && (
             <div className="flex flex-col gap-2">
               <span className="text-[10px] font-black uppercase text-gray-500">Quick Start Examples:</span>

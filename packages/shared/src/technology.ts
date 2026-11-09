@@ -1530,6 +1530,13 @@ export let technologyLibrary: TechnologyDefinition[] = [
     "color": "#E3A857",
     "description": "High-performance chess engine for calculations and game analysis."
 },
+    {
+    "id": "scylladb",
+    "label": "ScyllaDB",
+    "category": "data",
+    "color": "#6C8EBF",
+    "description": "C++ powered ultra-high performance Cassandra-compatible NoSQL database."
+},
 ];
 
 // ── Registry helpers for AI-discovered technologies ───────────

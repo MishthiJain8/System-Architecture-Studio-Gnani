@@ -62,7 +62,7 @@ export async function POST(req: Request) {
             schema: AiSecurityReviewSchema as any, // Cast as any to avoid TS2589
             system: SYSTEM_PROMPT,
             prompt: promptText,
-            temperature: 0.2, // Low temperature for more deterministic analysis
+
             maxRetries: 0,
         });
 

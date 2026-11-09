@@ -3,6 +3,8 @@
 import { X, BookOpen, Loader2, RefreshCw, Download, Trash2 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 
+import { GnaniSpeechPlayer } from "./gnani-speech-player";
+
 interface ExplainFlowModalProps {
     isOpen: boolean;
     onClose: () => void;
@@ -98,7 +100,14 @@ export function ExplainFlowModal({
                     </div>
                 </div>
 
-                {/* Content */}
+                
+      {explanation && !isExplaining && (
+        <div className="px-5 py-3 border-b-[3px] border-[#161616]">
+          <GnaniSpeechPlayer text={explanation} />
+        </div>
+      )}
+
+      {/* Content */}
                 <div className="flex-1 overflow-y-auto p-6 md:p-8">
                     {/* Empty State */}
                     {!explanation && !isExplaining && !error && (

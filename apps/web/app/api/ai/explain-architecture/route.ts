@@ -55,7 +55,7 @@ export async function POST(req: Request) {
             model: google(process.env.AI_MODEL || "gemini-3.1-pro-preview"),
             system: SYSTEM_PROMPT,
             prompt: promptText,
-            temperature: 0.3,
+
         });
 
         return NextResponse.json({ explanation: text });
